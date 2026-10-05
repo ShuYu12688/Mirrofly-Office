@@ -1,4 +1,7 @@
+
 # Mirrorfly Office
+<img width="1260" height="820" alt="df02cb6d54da9a5bdd59b11c0adf6ce1" src="https://github.com/user-attachments/assets/4e295cc3-edca-4cf2-a23b-d55548aec6a9" />
+
 
 一个使用 C++17 和 Qt 6 编写的轻量级桌面办公项目，作者：舒宇。
 
@@ -6,11 +9,15 @@
 项目处于持续优化阶段，重点是文件兼容性、编辑稳定性和 AI 办公任务的可靠交付。
 
 ## 可以做什么
-
+<img width="1260" height="820" alt="34e92b36c64798a41a734b24465cee58" src="https://github.com/user-attachments/assets/082737b7-53aa-45cc-a031-e3c611826a7a" />
 - Word 文档、电子表格、演示文稿的读取、显示及已实现范围内的编辑和保存。
+<img width="1260" height="820" alt="7f7f14bbc3d66a3a47f58c86e07ee02b" src="https://github.com/user-attachments/assets/eaca8f14-11fa-4428-a2b5-864189a54733" />
+
 - PDF 查看及已实现的页面、批注操作。
 - 文本、Markdown 和思维导图编辑。
 - 通过公开的文档操作接口执行 AI 办公任务，并校验实际保存结果。
+<img width="1831" height="893" alt="c3d72e54ede74bb97ddd71f63f1b77bf" src="https://github.com/user-attachments/assets/511200c7-636b-47d4-a03e-0bc7b0da33d6" />
+
 
 这是开发中的 Beta 项目，不承诺完整兼容 Microsoft Office，也不承诺无损处理所有复杂文件。
 字体、嵌入对象、动画和复杂排版等能力，以当前代码、测试和具体文件验证结果为准。
