@@ -1,0 +1,242 @@
+{
+  "qtVersion": "6.8.3",
+  "scope": "Selected library entries; not a complete deployed-binary inventory",
+  "modules": [
+    {
+      "sdkModule": "qtbase",
+      "name": "Core",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "Concurrent",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "Network",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "Gui",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "OpenGL",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "Widgets",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtbase",
+      "name": "Test",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtbase-6.8.3.spdx.json",
+      "sdkSbomSha256": "73b4dee169c8f3a1c0c2e2f904d0679cc156ce7e9320f7c866bb723dd4faac68"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "Qml",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QmlModels",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QmlWorkerScript",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "Quick",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickLayouts",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickTemplates2",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickControls2",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickDialogs2Utils",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickDialogs2QuickImpl",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickDialogs2",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtsvg",
+      "name": "Svg",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtsvg-6.8.3.spdx.json",
+      "sdkSbomSha256": "bb2422665242611dc001b3ec8269b1a5a623da6d5dc08bc8e64467cfd2e50685"
+    },
+    {
+      "sdkModule": "qtsvg",
+      "name": "SvgWidgets",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtsvg-6.8.3.spdx.json",
+      "sdkSbomSha256": "bb2422665242611dc001b3ec8269b1a5a623da6d5dc08bc8e64467cfd2e50685"
+    },
+    {
+      "sdkModule": "qtshadertools",
+      "name": "ShaderTools",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtshadertools-6.8.3.spdx.json",
+      "sdkSbomSha256": "dbbd8fd69316a2f9768d51add8eeb3333a49b9516d03146fc5f6222091347e5f"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QmlMeta",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickEffectsPrivate",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "effectsplugin",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickShapesPrivate",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "qmlshapesplugin",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickControls2Impl",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickControls2BasicStyleImpl",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "QuickControls2Basic",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    },
+    {
+      "sdkModule": "qtdeclarative",
+      "name": "LabsFolderListModel",
+      "licenseDeclared": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "licenseConcluded": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "sdkSbomFile": "qtdeclarative-6.8.3.spdx.json",
+      "sdkSbomSha256": "a8ecaf2320ea7dde15ec8f1914e7edd0522a3d087cf8fcdafed1debd7e7d9441"
+    }
+  ],
+  "notes": [
+    "Qt6QuickEffects.dll is represented by the SDK package QuickEffectsPrivate; Qt6QuickShapes.dll by QuickShapesPrivate. The Private suffix is an upstream package name, not an application API choice.",
+    "Includes names corresponding to the 23 top-level Qt DLLs in the local 1.1.10beta portable distribution; nested plugins and third-party dependencies require their own complete binary-release inventory."
+  ]
+}

@@ -1,0 +1,8 @@
+#pragma once
+
+namespace mirrorfly
+{
+    inline constexpr const char* presentation_geometry_xml_parts[]{
+@MIRRORFLY_GEOMETRY_CHUNKS@
+    };
+}

@@ -1,0 +1,301 @@
+{
+  "repository": "https://github.com/apache/poi",
+  "revision": "93b6a820f4aaefd7b062615f843799947872cb24",
+  "selection": "Feature-directed, frozen before execution. Failures stay in the baseline. Not random or population-representative.",
+  "files": [
+    {
+      "path": "document/Styles.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/Styles.docx",
+      "sha256": "63f3fe4c3b4fbdc211eca8fa7fd31a799ff4438afbf4ca6e771b3aef107c732e",
+      "bytes": 10905
+    },
+    {
+      "path": "document/NumberingWOverrides.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/NumberingWOverrides.docx",
+      "sha256": "3754dee43880ce4c9e962eca41ac78c353999888282c9ada528efbb826e2bee6",
+      "bytes": 15190
+    },
+    {
+      "path": "document/ComplexNumberedLists.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/ComplexNumberedLists.docx",
+      "sha256": "297a085a7d433af2eeee7661e8db21539452cb585096484774a1e9f5f258b0b6",
+      "bytes": 14458
+    },
+    {
+      "path": "document/WithTabs.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/WithTabs.docx",
+      "sha256": "c6460c33b3343b0656189d5cba344fadafea821f8982ea01619c5324fa87a266",
+      "bytes": 14190
+    },
+    {
+      "path": "document/HeaderFooterUnicode.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/HeaderFooterUnicode.docx",
+      "sha256": "ec439ac0643294e1e2961b381983304e044444f3a8f0dc465a98adf9ebee0e67",
+      "bytes": 15079
+    },
+    {
+      "path": "document/PageSpecificHeadFoot.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/PageSpecificHeadFoot.docx",
+      "sha256": "90bb8251b18c9f94e0b8fb91192413922a09dbe418a4a210116221054378eaad",
+      "bytes": 22994
+    },
+    {
+      "path": "document/footnotes.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/footnotes.docx",
+      "sha256": "9070094b27ff5201477f4de4b2c027730c66cb889106a1609c5adeed207a59c1",
+      "bytes": 12823
+    },
+    {
+      "path": "document/TestTableCellAlign.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/TestTableCellAlign.docx",
+      "sha256": "2968d4a5d5de21dce1cbeae3235e545cdf4bfd7ae508fe0eed3a9b032773ce17",
+      "bytes": 11712
+    },
+    {
+      "path": "document/table-alignment.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/table-alignment.docx",
+      "sha256": "ee36729e0d050e529fea0b444006a194bea72b35cf8958ae58c6624c26156b41",
+      "bytes": 15519
+    },
+    {
+      "path": "document/table-indent.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/table-indent.docx",
+      "sha256": "aaa3fd6a1c0d6ac222ccacad213257b9061be7d706396a36b3ffedacb3a56c9b",
+      "bytes": 7639
+    },
+    {
+      "path": "document/VariousPictures.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/VariousPictures.docx",
+      "sha256": "c1eecbca7de9f99e21c677e1d5b045eaa1d5a442eff4c82f0cbe9af93726a070",
+      "bytes": 103677
+    },
+    {
+      "path": "document/drawing.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/drawing.docx",
+      "sha256": "5e83462dd7ac3cf0a333fe09cf0837602dbd41775cdcec813a6e288b5d55dff8",
+      "bytes": 95247
+    },
+    {
+      "path": "document/rtl.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/rtl.docx",
+      "sha256": "d159b6ac6734f14a9ecf8e97ca5029bdcddbfae2d33ba0128aa774924e0b190d",
+      "bytes": 6838
+    },
+    {
+      "path": "document/heading123.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/heading123.docx",
+      "sha256": "dac67500b907811030ab2bdd5b1c65cda97a15651d6ec0d33592ef70d34a5550",
+      "bytes": 74810
+    },
+    {
+      "path": "document/shapes-with-text.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/shapes-with-text.docx",
+      "sha256": "1ef4d8cbfd5e2333897ab3193b58ce445cee7e45476d39e5626a4c7097f72d95",
+      "bytes": 27520
+    },
+    {
+      "path": "document/SampleDoc.docx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/document/SampleDoc.docx",
+      "sha256": "ea2c517bd7be4628887eb97f630334b93b894f4522d2c0adae263e602d76df92",
+      "bytes": 11611
+    },
+    {
+      "path": "spreadsheet/Formatting.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/Formatting.xlsx",
+      "sha256": "5a0aa7c36c53b22cd26e3eeb2ee49bf16f7e4101aafa8b1503a0778f4010ddbc",
+      "bytes": 8847
+    },
+    {
+      "path": "spreadsheet/styles.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/styles.xlsx",
+      "sha256": "4b544c197c391a8eb1711e9c6a962fd6371a96815dded21aa2461d71e27a046c",
+      "bytes": 9309
+    },
+    {
+      "path": "spreadsheet/Themes.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/Themes.xlsx",
+      "sha256": "675234ce15443e36e8bb41869cfc700143b1ac7152ebb7531fc49a92789b3be4",
+      "bytes": 9506
+    },
+    {
+      "path": "spreadsheet/customIndexedColors.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/customIndexedColors.xlsx",
+      "sha256": "6f9372b9c67e932e79aec95dae15fcd05877eac289895537aee80ce9c2bd8b00",
+      "bytes": 19534
+    },
+    {
+      "path": "spreadsheet/ShrinkToFit.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/ShrinkToFit.xlsx",
+      "sha256": "a07b41551780d0a40755f74ea85bf21a327330e8e922504365283678e2d0038e",
+      "bytes": 6145
+    },
+    {
+      "path": "spreadsheet/WidthsAndHeights.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/WidthsAndHeights.xlsx",
+      "sha256": "72a84c23b2939f31fa6357867e6b34d3454efb84c830739c10797f767de1007e",
+      "bytes": 8597
+    },
+    {
+      "path": "spreadsheet/NumberFormatTests.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/NumberFormatTests.xlsx",
+      "sha256": "a11d437ee538abe36d630a4795dd30d5823a68dce02a404a45e085dd49c4435d",
+      "bytes": 21470
+    },
+    {
+      "path": "spreadsheet/DateFormatTests.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/DateFormatTests.xlsx",
+      "sha256": "16445dc0deba00671ee4315015a970d415ce9886da59c974532d946e99276c66",
+      "bytes": 12394
+    },
+    {
+      "path": "spreadsheet/ExcelTables.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/ExcelTables.xlsx",
+      "sha256": "1e43011440eb39000d1751abaf9ded42d37b26f91b4f586a94bf91ce8ecbe9e5",
+      "bytes": 9457
+    },
+    {
+      "path": "spreadsheet/tableStyle.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/tableStyle.xlsx",
+      "sha256": "494f76f9c9fa63f1980b7a250bbfcf6f8df7fb0b1cd5528307deef1b0b5b6cb8",
+      "bytes": 10899
+    },
+    {
+      "path": "spreadsheet/ConditionalFormattingSamples.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/ConditionalFormattingSamples.xlsx",
+      "sha256": "8dfa997a642c00a1da8c0750c371f204553a98c537ca046028b052f9b424a074",
+      "bytes": 654688
+    },
+    {
+      "path": "spreadsheet/NewStyleConditionalFormattings.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/NewStyleConditionalFormattings.xlsx",
+      "sha256": "1e97af3b87636bd0a759c25439a21b928c2ff3b9a3c57ca49ae24cb1ccdb7e2f",
+      "bytes": 13378
+    },
+    {
+      "path": "spreadsheet/WithVariousData.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/WithVariousData.xlsx",
+      "sha256": "1440a832bb810c09687d3498b841782964b0b697e9242428fed1072ab22d078a",
+      "bytes": 10603
+    },
+    {
+      "path": "spreadsheet/shared_formulas.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/shared_formulas.xlsx",
+      "sha256": "31612d513b5ea5aaa69764779f87ac52588687770f3ccbf4b420ec21bc70561f",
+      "bytes": 10137
+    },
+    {
+      "path": "spreadsheet/SimpleWithComments.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/SimpleWithComments.xlsx",
+      "sha256": "d7d337b3436e863487d26439a57ef749950c599862325d7bce7e830acf1df0ba",
+      "bytes": 10060
+    },
+    {
+      "path": "spreadsheet/WithDrawing.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/WithDrawing.xlsx",
+      "sha256": "97b1ab359d6aecbe37864f30c85106e386f0a19bea8f290103927362a2701066",
+      "bytes": 101696
+    },
+    {
+      "path": "spreadsheet/SampleSS.strict.xlsx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/spreadsheet/SampleSS.strict.xlsx",
+      "sha256": "cbfff2096b33055de1686ae99ff649f78f3cc97d7271c242840be6b40837f6e6",
+      "bytes": 10006
+    },
+    {
+      "path": "slideshow/WithMaster.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/WithMaster.pptx",
+      "sha256": "54ae7677fd2813a815160cc72bd8960a4e482690dfc369b392868521c9b61549",
+      "bytes": 47505
+    },
+    {
+      "path": "slideshow/layouts.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/layouts.pptx",
+      "sha256": "9c3d53afa3115de2ba72ec77637a616aeed505a6ff3b30a46db871c4edd32be5",
+      "bytes": 62901
+    },
+    {
+      "path": "slideshow/themes.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/themes.pptx",
+      "sha256": "3ea86e4ee84a8bca6b99fe3a9f2a9a9186c0655df28ff92a2d02da24926c64ba",
+      "bytes": 322325
+    },
+    {
+      "path": "slideshow/shapes.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/shapes.pptx",
+      "sha256": "19fde9b87e33dd1a95fdbba0cf6abc2278bf03874f4665c7f8b88b6afe4a2571",
+      "bytes": 68822
+    },
+    {
+      "path": "slideshow/customGeo.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/customGeo.pptx",
+      "sha256": "9baa7f4554cbaddfcebcc431432268ea34f20c02787172bb0a7d12d640e7e84f",
+      "bytes": 1046067
+    },
+    {
+      "path": "slideshow/backgrounds.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/backgrounds.pptx",
+      "sha256": "6d1e661c87b072a701e02e28f9d2c9bb43c6bfe0ad5acd02811a0382bab769b7",
+      "bytes": 63442
+    },
+    {
+      "path": "slideshow/picture-transparency.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/picture-transparency.pptx",
+      "sha256": "0ce76411a6e2fe3a5b8acf42722b973131a91b93cb5c3118a5a9c481b063e386",
+      "bytes": 11793
+    },
+    {
+      "path": "slideshow/table-with-theme.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/table-with-theme.pptx",
+      "sha256": "571d0cd2e1e9767249b3a02544c7771c883c48bb191264409729c7cec574ab48",
+      "bytes": 35189
+    },
+    {
+      "path": "slideshow/table-with-different-font-colors.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/table-with-different-font-colors.pptx",
+      "sha256": "fb0245f28e32e5137da6f9c2a9c35c5a8694a71c35d675ab671a595c1b93d72d",
+      "bytes": 36562
+    },
+    {
+      "path": "slideshow/bar-chart.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/bar-chart.pptx",
+      "sha256": "79e1d218bfb2903e8dc8425a6b1997d9c1976f5a5f025bada85b0c47b5777969",
+      "bytes": 44410
+    },
+    {
+      "path": "slideshow/line-chart.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/line-chart.pptx",
+      "sha256": "a2319540fb096629874e8c2baf91b9f8afd1386bfba411efff503b96dce9e9a1",
+      "bytes": 44700
+    },
+    {
+      "path": "slideshow/smartart-simple.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/smartart-simple.pptx",
+      "sha256": "238ff6433dac00b2722edb9a29d97f56ab4f3c9c37f33a73d6f53baf494916aa",
+      "bytes": 71102
+    },
+    {
+      "path": "slideshow/smartart-rotated-text.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/smartart-rotated-text.pptx",
+      "sha256": "a357985aec81b0bfa8a71138bbe94c9b3f6e00dee110c0da34302e22253de260",
+      "bytes": 43459
+    },
+    {
+      "path": "slideshow/with_japanese.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/with_japanese.pptx",
+      "sha256": "f0b1efbfbd70f7ee2395dc2505639f99449971ba404a6ec8cf1b97d82cf45c10",
+      "bytes": 48011
+    },
+    {
+      "path": "slideshow/sample_pptx_grouping_issues.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/sample_pptx_grouping_issues.pptx",
+      "sha256": "a8639e12e763a01d889a6178e154c21db2dd4275f8f35ac81a458f81e26b2c18",
+      "bytes": 39436
+    },
+    {
+      "path": "slideshow/EmbeddedAudio.pptx",
+      "url": "https://raw.githubusercontent.com/apache/poi/93b6a820f4aaefd7b062615f843799947872cb24/test-data/slideshow/EmbeddedAudio.pptx",
+      "sha256": "c5ae4274e2bf5504a56aef9c8d7c5d2381ece69c9bf68f7749ad5eae3e675edb",
+      "bytes": 90047
+    }
+  ]
+}

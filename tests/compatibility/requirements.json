@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "baseline": "1.0.5beta",
+  "frozenOn": "2026-09-29",
+  "rules": [
+    "Features may be added or clarified with history; failures must not be removed to improve score.",
+    "Each feature needs import, display, edit, save-reopen, and AI evidence. Preserve-only does not prove display or edit.",
+    "GUI acceptance is separate and user-owned. Unknown and partial gates do not pass.",
+    "A feature-directed 49-file corpus is not a representative population estimate."
+  ],
+  "modules": {
+    "word": [
+      {
+        "id": "word.unicode",
+        "name": "中英及补充平面字符",
+        "acceptance": "文字内容与UTF-16位置一致，保存后逐段相同",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.fonts",
+        "name": "西文/东亚字体与回退",
+        "acceptance": "字体选择、混排与缺字回退",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.size",
+        "name": "字号及半磅字号",
+        "acceptance": "导入、指定文本修改、重开保持",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.emphasis",
+        "name": "粗斜体",
+        "acceptance": "直接值与样式继承",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.decoration",
+        "name": "下划线与删除线",
+        "acceptance": "常用单/双线及取消",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.rgb",
+        "name": "文字RGB颜色",
+        "acceptance": "直接颜色及取消",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.theme",
+        "name": "主题文字与亮暗变体",
+        "acceptance": "主题引用、tint/shade、直接覆盖",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.highlight",
+        "name": "突出显示与文字底纹",
+        "acceptance": "颜色和清除",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.script",
+        "name": "上下标",
+        "acceptance": "基线/上标/下标",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.spacing",
+        "name": "字符间距",
+        "acceptance": "正负字间距与保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.ruby",
+        "name": "注音",
+        "acceptance": "注音独立于正文保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.alignment",
+        "name": "段落对齐与RTL",
+        "acceptance": "左中右两端/混排方向",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.indent",
+        "name": "左右与首行缩进",
+        "acceptance": "首行/悬挂与直接覆盖",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.paragraph_spacing",
+        "name": "段前段后",
+        "acceptance": "点数和继承",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.line_spacing",
+        "name": "倍数/固定/最小行距",
+        "acceptance": "导入和编辑不混淆单位",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.styles",
+        "name": "段落/字符样式继承",
+        "acceptance": "basedOn/default/direct优先级",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.bullets",
+        "name": "项目符号",
+        "acceptance": "符号与缩进保持",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.numbering",
+        "name": "编号与重启",
+        "acceptance": "连续/起始/覆盖编号",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.multilevel",
+        "name": "多级列表",
+        "acceptance": "级别、编号模板、重启",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.tabs",
+        "name": "制表位与前导符",
+        "acceptance": "显式tab位置/对齐/点线",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.paragraph_border",
+        "name": "段落边框/底纹",
+        "acceptance": "边框属性、主题和底色",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.page_break",
+        "name": "分页与段落保持",
+        "acceptance": "显式分页、keepNext/keepLines",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.sections",
+        "name": "分节与多页布局",
+        "acceptance": "连续/下一页及页级几何",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.page_geometry",
+        "name": "纸张方向与页边距",
+        "acceptance": "A4/Letter/横向及四边距",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.header_footer",
+        "name": "页眉页脚",
+        "acceptance": "普通/首页/奇偶及独立样式",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.fields",
+        "name": "页码与常用域",
+        "acceptance": "域与显示值保留、页码正确",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.hyperlinks",
+        "name": "超链接",
+        "acceptance": "显示文本及目标保持",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.notes",
+        "name": "脚注与尾注",
+        "acceptance": "引用、正文与布局",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_grid",
+        "name": "表格行列与宽度",
+        "acceptance": "行列位置、宽度及编辑",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_merge",
+        "name": "表格横纵合并",
+        "acceptance": "跨度和续接单元格",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_margin",
+        "name": "单元格边距",
+        "acceptance": "四边独立，继承/直接覆盖",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_align",
+        "name": "单元格对齐",
+        "acceptance": "水平/垂直对齐",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_fill",
+        "name": "单元格底纹",
+        "acceptance": "直接/主题/条件底色",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_border",
+        "name": "表格逐边框",
+        "acceptance": "逐边线型/颜色/宽度及冲突",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.table_style",
+        "name": "表格条件样式",
+        "acceptance": "全表/条纹/首末行列/角落与继承",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.nested_table",
+        "name": "嵌套表格",
+        "acceptance": "最近表样式、布局与原包",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.inline_image",
+        "name": "行内图片",
+        "acceptance": "图像、尺寸和文字位置",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.image_transform",
+        "name": "图片裁剪旋转翻转",
+        "acceptance": "显示变换及保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.image_wrap",
+        "name": "浮动图片与环绕",
+        "acceptance": "anchor定位/环绕/前后层",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.textboxes",
+        "name": "文本框与形状文字",
+        "acceptance": "位置、样式与正文区别",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.comments",
+        "name": "批注",
+        "acceptance": "批注内容/定位保留与显示",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.revisions",
+        "name": "修订痕迹",
+        "acceptance": "插入删除显示与原包保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "word.pdf",
+        "name": "PDF导出",
+        "acceptance": "文字可检索、样式和分页",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      }
+    ],
+    "sheets": [
+      {
+        "id": "sheets.unicode",
+        "name": "文字及Unicode",
+        "acceptance": "文本和转义精确保留",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.types",
+        "name": "数字/布尔/错误/空值",
+        "acceptance": "类型与值不混淆",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.rich_text",
+        "name": "单元格富文本",
+        "acceptance": "同格多字体与颜色",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.font",
+        "name": "字体与字号",
+        "acceptance": "字体及半磅字号",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.emphasis",
+        "name": "粗斜体及线饰",
+        "acceptance": "粗斜/下划线/删除线",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.rgb",
+        "name": "直接字体/填充色",
+        "acceptance": "RGB颜色保持",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.theme",
+        "name": "主题/索引/亮暗颜色",
+        "acceptance": "解析和直接覆盖",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.pattern_fill",
+        "name": "填充图案与渐变",
+        "acceptance": "前背景色及常用图案/渐变",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.border",
+        "name": "逐边框",
+        "acceptance": "四边/对角线型与颜色",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.align",
+        "name": "水平垂直对齐",
+        "acceptance": "含分散/两端与空白",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.indent",
+        "name": "缩进",
+        "acceptance": "缩进方向与值",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.wrap",
+        "name": "自动换行",
+        "acceptance": "行高与多行文本",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.rotation",
+        "name": "文字角度/竖排",
+        "acceptance": "0..180/255及保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.shrink",
+        "name": "缩小适应",
+        "acceptance": "原字号不变，换行优先",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.number",
+        "name": "整数小数与分组",
+        "acceptance": "格式码、精度、负数",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.date",
+        "name": "日期时间/1904系统",
+        "acceptance": "日期序列与显示一致",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.percent",
+        "name": "百分比与货币",
+        "acceptance": "格式和数值分离",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.custom_number",
+        "name": "自定义数字格式",
+        "acceptance": "多段、颜色、文字占位和转义",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.merge",
+        "name": "合并区域",
+        "acceptance": "锚点与覆盖格",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.dimensions",
+        "name": "行高列宽",
+        "acceptance": "单位、隐藏与默认尺寸",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.hidden",
+        "name": "隐藏行列/工作表",
+        "acceptance": "状态与显示",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.freeze",
+        "name": "冻结窗格",
+        "acceptance": "滚动位置和锁定区域",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.table",
+        "name": "内置及自定义表样式",
+        "acceptance": "表头/合计/条纹/首末列",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.conditional_cell",
+        "name": "数值条件格式",
+        "acceptance": "比较条件、优先级/stopIfTrue",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.conditional_formula",
+        "name": "公式条件格式",
+        "acceptance": "相对引用/多区域/优先级",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.conditional_visual",
+        "name": "色阶/数据条/图标",
+        "acceptance": "规则与显示",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.basic_formula",
+        "name": "常用公式与缓存",
+        "acceptance": "运算/聚合/逻辑/文本/日期",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.shared_formula",
+        "name": "共享/数组公式",
+        "acceptance": "范围、相对引用与保留",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.references",
+        "name": "跨表/命名引用",
+        "acceptance": "重命名、插删与引用更新",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.structured_formula",
+        "name": "结构化表引用",
+        "acceptance": "表扩展和公式",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.sort_filter",
+        "name": "排序与筛选",
+        "acceptance": "结果和样式跟随",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.validation",
+        "name": "数据验证",
+        "acceptance": "规则/下拉/无效值处理",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.comments",
+        "name": "批注/超链接",
+        "acceptance": "内容和目标",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.images",
+        "name": "工作表图片",
+        "acceptance": "锚点/大小/保留",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.charts",
+        "name": "常用图表",
+        "acceptance": "数据与图形显示",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.protection",
+        "name": "保护区域",
+        "acceptance": "能力与只读不越权",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.print",
+        "name": "打印区域/页设置",
+        "acceptance": "页眉页脚/重复行列/缩放",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.strict",
+        "name": "Strict OOXML",
+        "acceptance": "严格命名空间导入与保留",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "sheets.pdf",
+        "name": "PDF导出",
+        "acceptance": "文字、格式、合并与分页",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      }
+    ],
+    "slides": [
+      {
+        "id": "slides.unicode",
+        "name": "混合语言文字",
+        "acceptance": "中英日及Unicode字符",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.font",
+        "name": "字体与主题字体",
+        "acceptance": "西文/东亚/替代字体",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.size",
+        "name": "字号和自动适应",
+        "acceptance": "字号及fontScale",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.emphasis",
+        "name": "粗斜体与线饰",
+        "acceptance": "继承及直接覆盖",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.text_color",
+        "name": "文字颜色/亮暗",
+        "acceptance": "主题及RGB变换",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.highlight",
+        "name": "突出显示/上下标",
+        "acceptance": "文字局部格式",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.paragraph",
+        "name": "段落对齐和间距",
+        "acceptance": "左右中两端、前后及行距",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.bullet",
+        "name": "项目符号/编号",
+        "acceptance": "级别及缩进",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.text_box",
+        "name": "文本框边距与垂直对齐",
+        "acceptance": "边距、锚点和换行",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.vertical_text",
+        "name": "竖排和文字旋转",
+        "acceptance": "方向及字形排布",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.placeholder",
+        "name": "占位符继承",
+        "acceptance": "slide/layout/master优先级",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.layout",
+        "name": "布局/母版",
+        "acceptance": "对象、背景和主题",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.geometry",
+        "name": "常用几何形状",
+        "acceptance": "预设与调节点",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.custom_geometry",
+        "name": "自由形状",
+        "acceptance": "路径、曲线和填充规则",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.line",
+        "name": "线条与连接线",
+        "acceptance": "线型/粗细/端箭头",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.solid_fill",
+        "name": "形状纯色填充",
+        "acceptance": "RGB和主题透明度",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.gradient",
+        "name": "渐变与图案",
+        "acceptance": "停靠点/角度/变换",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.effects",
+        "name": "阴影与发光",
+        "acceptance": "常用效果位置与透明度",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.image",
+        "name": "图片格式与方向",
+        "acceptance": "PNG/JPEG/GIF/TIFF及EXIF",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.crop",
+        "name": "图片裁剪与透明",
+        "acceptance": "裁剪、填充和透明度",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.transform",
+        "name": "旋转翻转和缩放",
+        "acceptance": "文字与形状统一变换",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.groups",
+        "name": "组合及层级",
+        "acceptance": "嵌套/解组/重组和保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.z_order",
+        "name": "前后层与选择",
+        "acceptance": "显示/命中测试层序",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.table_text",
+        "name": "表格文字样式",
+        "acceptance": "多段落/字体/对齐",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.table_style",
+        "name": "表格条件样式",
+        "acceptance": "主题/条纹/表头/合计",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.table_border",
+        "name": "表格边框与合并",
+        "acceptance": "逐边和跨度",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.charts",
+        "name": "常用图表",
+        "acceptance": "柱/线/饼等数据和显示",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.smartart",
+        "name": "SmartArt",
+        "acceptance": "文字/布局/连线及保留",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.equation",
+        "name": "数学公式",
+        "acceptance": "Office公式显示与原包",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.audio_video",
+        "name": "音视频",
+        "acceptance": "媒体保留与播放",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.animation",
+        "name": "常用动画",
+        "acceptance": "对象、序列、时序",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.transition",
+        "name": "页面切换",
+        "acceptance": "类型/速度/计时",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.background",
+        "name": "背景与图片背景",
+        "acceptance": "slide/layout/master继承",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.page_size",
+        "name": "画布尺寸",
+        "acceptance": "比例与自定义尺寸",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.notes",
+        "name": "备注",
+        "acceptance": "备注内容保留/读取",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.sections",
+        "name": "节与隐藏页",
+        "acceptance": "顺序/显示/保存",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.links",
+        "name": "超链接与动作",
+        "acceptance": "对象/文本链接",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.structure",
+        "name": "插删重排复制页",
+        "acceptance": "关系和内容保持",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      },
+      {
+        "id": "slides.pdf",
+        "name": "PDF/图片导出",
+        "acceptance": "文字/页序/几何/透明度",
+        "gates": {
+          "import": "unverified",
+          "display": "unverified",
+          "edit": "unverified",
+          "saveReopen": "unverified",
+          "ai": "unverified"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+    <title>Mirrorfly Office</title>
+    <desc>An abstract M drawn as two folded butterfly wings, echoing the company mark.</desc>
+    <path d="M30 70 111 96 128 150 145 96 226 70 194 177 149 203 128 171 107 203 62 177 30 70Z" fill="#0739B8"/>
+    <path d="M30 70 101 107 128 171 107 203 62 177 30 70Z" fill="#1764E8"/>
+    <path d="M226 70 155 107 128 171 149 203 194 177 226 70Z" fill="#009FE8"/>
+    <path d="M44 91 103 127 118 164 72 153 44 91Z" fill="#5BCBFA"/>
+    <path d="M212 91 153 127 138 164 184 153 212 91Z" fill="#72D9FC"/>
+    <path d="M103 127 128 171 153 127 145 96 128 150 111 96 103 127Z" fill="#001EB0"/>
+    <path d="m19 159 37 9 20 25-35-12-22-22Zm-7 22 29 8 15 18-28-11-16-15Z" fill="#009FE8"/>
+</svg>

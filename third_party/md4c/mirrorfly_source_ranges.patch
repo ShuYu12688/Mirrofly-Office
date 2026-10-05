@@ -1,0 +1,140 @@
+--- upstream/md4c.c
++++ local/md4c.c
+@@ -4162,7 +4162,8 @@
+ static int
+ md_enter_leave_span_a(MD_CTX* ctx, int enter, MD_SPANTYPE type,
+                       const CHAR* dest, SZ dest_size, int is_autolink,
+-                      const CHAR* title, SZ title_size)
++                      const CHAR* title, SZ title_size,
++                      const MD_MARK* opener, const MD_MARK* closer)
+ {
+     MD_ATTRIBUTE_BUILD href_build = { 0 };
+     MD_ATTRIBUTE_BUILD title_build = { 0 };
+@@ -4177,8 +4178,12 @@
+                     &det.href, &href_build));
+     MD_CHECK(md_build_attribute(ctx, title, title_size, 0, &det.title, &title_build));
+     det.is_autolink = is_autolink;
+-    if(enter)
++    if(enter) {
++        if(ctx->parser.source_span != NULL)
++            MD_CHECK(ctx->parser.source_span(type, opener->beg, closer->end,
++                       opener->end, closer->beg, ctx->userdata));
+         MD_ENTER_SPAN(type, &det);
++    }
+     else
+         MD_LEAVE_SPAN(type, &det);
+ 
+@@ -4257,6 +4262,11 @@
+ 
+                 case '`':       /* Code span. */
+                     if(mark->flags & MD_MARK_OPENER) {
++                        if(ctx->parser.source_span != NULL) {
++                            const MD_MARK* closer = &ctx->marks[mark->next];
++                            MD_CHECK(ctx->parser.source_span(MD_SPAN_CODE, mark->beg, closer->end,
++                                       mark->end, closer->beg, ctx->userdata));
++                        }
+                         MD_ENTER_SPAN(MD_SPAN_CODE, NULL);
+                         text_type = MD_TEXT_CODE;
+                     } else {
+@@ -4358,7 +4368,7 @@
+                                 (opener->ch == '!' ? MD_SPAN_IMG : MD_SPAN_A),
+                                 STR(dest_mark->beg), dest_mark->end - dest_mark->beg, FALSE,
+                                 md_mark_get_ptr(ctx, (int)(title_mark - ctx->marks)),
+-								title_mark->prev));
++								title_mark->prev, opener, closer));
+ 
+                     /* link/image closer may span multiple lines. */
+                     if(mark->ch == ']') {
+@@ -4414,7 +4424,7 @@
+ 
+                     if(closer->flags & MD_MARK_VALIDPERMISSIVEAUTOLINK)
+                         MD_CHECK(md_enter_leave_span_a(ctx, (mark->flags & MD_MARK_OPENER),
+-                                    MD_SPAN_A, dest, dest_size, TRUE, NULL, 0));
++                                    MD_SPAN_A, dest, dest_size, TRUE, NULL, 0, opener, closer));
+                     break;
+                 }
+ 
+@@ -4483,6 +4493,10 @@
+                         break_type = MD_TEXT_BR;
+                 }
+ 
++                if(break_type == MD_TEXT_BR && ctx->parser.source_break != NULL) {
++                    OFF break_begin = enforce_hardbreak ? prev_mark->beg : line->end;
++                    MD_CHECK(ctx->parser.source_break(break_begin, (line+1)->beg, ctx->userdata));
++                }
+                 MD_TEXT(break_type, _T("\n"), 1);
+             }
+ 
+@@ -4676,6 +4690,7 @@
+      * MD_BLOCK_OL:     Start item number.
+      */
+     MD_SIZE n_lines;
++    OFF source_end;
+ };
+ 
+ struct MD_CONTAINER_tag {
+@@ -4848,6 +4863,21 @@
+         default:
+             /* Noop. */
+             break;
++    }
++
++    if(ctx->parser.source_block != NULL) {
++        if(block->n_lines > 0 && (block->type == MD_BLOCK_CODE || block->type == MD_BLOCK_HTML)) {
++            const MD_VERBATIMLINE* lines = (const MD_VERBATIMLINE*)(block + 1);
++            MD_CHECK(ctx->parser.source_block(block->type, lines[0].beg,
++                         block->source_end, ctx->userdata));
++        } else if(block->n_lines > 0) {
++            const MD_LINE* lines = (const MD_LINE*)(block + 1);
++            MD_CHECK(ctx->parser.source_block(block->type, lines[0].beg,
++                         lines[block->n_lines-1].end, ctx->userdata));
++        } else {
++            /* End the prior paragraph before code/table/HTML literal callbacks. */
++            MD_CHECK(ctx->parser.source_block(block->type, 0, 0, ctx->userdata));
++        }
+     }
+ 
+     if(!is_in_tight_list  ||  block->type != MD_BLOCK_P)
+@@ -5055,6 +5085,7 @@
+     block->flags = 0;
+     block->data = line->data;
+     block->n_lines = 0;
++    block->source_end = 0;
+ 
+     ctx->current_block = block;
+     return 0;
+@@ -5181,6 +5212,7 @@
+         line->end = analysis->end;
+     }
+     ctx->current_block->n_lines++;
++    ctx->current_block->source_end = analysis->end;
+ 
+     return 0;
+ }
+@@ -5888,6 +5920,8 @@
+              * which we transform into MD_LINE_BLANK. */
+             if(line->indent < ctx->code_indent_offset) {
+                 if(md_is_closing_code_fence(ctx, CH(pivot_line->beg), off, &off)) {
++                    if(ctx->current_block != NULL)
++                        ctx->current_block->source_end = off;
+                     line->type = MD_LINE_BLANK;
+                     ctx->last_line_has_list_loosening_effect = FALSE;
+                     break;
+--- upstream/md4c.h
++++ local/md4c.h
+@@ -380,6 +380,15 @@
+     /* Reserved. Set to NULL.
+      */
+     void (*syntax)(void);
++
++    /* Mirrorfly private extension: source ranges of links/images/code spans, UTF-8 end exclusive. */
++    int (*source_span)(MD_SPANTYPE type, MD_OFFSET begin, MD_OFFSET end,
++                       MD_OFFSET label_begin, MD_OFFSET label_end, void* userdata);
++    /* Hard break source, including the following container/indentation prefix. */
++    int (*source_break)(MD_OFFSET begin, MD_OFFSET end, void* userdata);
++    /* Leaf source, including tight-list paragraphs and fenced code delimiters. */
++    int (*source_block)(MD_BLOCKTYPE type, MD_OFFSET begin, MD_OFFSET end,
++                        void* userdata);
+ } MD_PARSER;
+ 
+ 
